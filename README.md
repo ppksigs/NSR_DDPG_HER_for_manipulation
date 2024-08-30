@@ -1,6 +1,5 @@
-# DDPG + HER
-Implementation of the Deep Deterministic Policy Gradient with Hindsight Experience Replay Extension on the MuJoCo's robotic FetchPickAndPlace environment.   
-> Visit [vanilla_DDPG](https://github.com/alirezakazemipour/DDPG-her/tree/vanilla_DDPG) branch for the implementation **without the HER extention**.  
+# NSR + DDPG + HER
+Implementation of "Novelty-based Sample Reuse for Continuous Robotics Control"   
 
 ## Dependencies  
 - gym == 0.17.2  
@@ -19,18 +18,10 @@ pip3 install -r requirements.txt
 
 ## Usage
 ```shell
-mpirun -np $(nproc) python3 -u main.py
+mpirun --oversubscribe -np 8 python3 -u main.py --env_name [envname] --rnd_weights_used [weight_used] --seed [seed]
+envname:[FetchPickAndPlace-v1, FetchPush-v1, FetchReach-v1]
+weight_used:[train_counts, not_used, rnd_norm, ablation_mean, ablation_mean_distrib]
 ```
-## Demo
-<p align="center">
-  <img src="Demo/FetchPickAndPlace.gif" height=250>
-</p>  
-
-
-## Result
-<p align="center">
-  <img src="Result/Fetch_PickandPlace.png" height=400>
-</p>
 
 ## Reference
 1. [_Continuous control with deep reinforcement learning_, Lillicrap et al., 2015](https://arxiv.org/abs/1509.02971)  

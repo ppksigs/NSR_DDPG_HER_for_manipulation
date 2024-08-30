@@ -28,5 +28,13 @@ weight_used:[train_counts, not_used, rnd_norm, ablation_mean, ablation_mean_dist
 2. [_Hindsight Experience Replay_, Andrychowicz et al., 2017](https://arxiv.org/abs/1707.01495)  
 3. [_Multi-Goal Reinforcement Learning: Challenging Robotics Environments and Request for Research_, Plappert et al., 2018](https://arxiv.org/abs/1802.09464)  
 ## Acknowledgement
-All the credit goes to [@TianhongDai](https://github.com/TianhongDai) for [his simplified implementation](https://github.com/TianhongDai/hindsight-experience-replay) of [the original OpenAI's code](https://github.com/openai/baselines/tree/master/baselines/her).  
+This project references and modifies the following open-source code:
+- **Original Author**: [@Alireza Kazemipour](https://github.com/alirezakazemipour)
+- **Original Project**: [DDPG-HER](https://github.com/alirezakazemipour/DDPG-HER)
+
+- **Original Author**: [@TianhongDai](https://github.com/TianhongDai)
+- **Original Project**:[his simplified implementation:hindsight-experience-replay](https://github.com/TianhongDai/hindsight-experience-replay) of [the original OpenAI's code](https://github.com/openai/baselines/tree/master/baselines/her)
+
+Special thanks to the original author for their excellent work! The following modifications were made to the original code:
+We added the code for the proposed NSR method, which improves the convergence rate and success rate of algorithms without significantly increasing time consumption.
 

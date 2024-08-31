@@ -1,6 +1,8 @@
 # NSR + DDPG + HER
 Implementation of "Novelty-based Sample Reuse for Continuous Robotics Control"   
 
+![Example Image](results/NSR.png)
+
 ## Dependencies  
 - gym == 0.17.2  
 - matplotlib == 3.1.2  

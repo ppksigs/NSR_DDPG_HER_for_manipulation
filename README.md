@@ -22,6 +22,9 @@ mpirun --oversubscribe -np 8 python3 -u main.py --env_name [envname] --rnd_weigh
 envname:[FetchPickAndPlace-v1, FetchPush-v1, FetchReach-v1]
 weight_used:[train_counts, not_used, rnd_norm, ablation_mean, ablation_mean_distrib]
 ```
+## Results
+![Example Image](results/compare_nsr_ddpg.png)
+
 
 ## Reference
 1. [_Continuous control with deep reinforcement learning_, Lillicrap et al., 2015](https://arxiv.org/abs/1509.02971)  

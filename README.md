@@ -26,12 +26,7 @@ weight_used:[train_counts, not_used, rnd_norm, ablation_mean, ablation_mean_dist
 ```
 ## Results
 ![Example Image](results/compare_nsr_ddpg.png)
-
-
-## Reference
-1. [_Continuous control with deep reinforcement learning_, Lillicrap et al., 2015](https://arxiv.org/abs/1509.02971)  
-2. [_Hindsight Experience Replay_, Andrychowicz et al., 2017](https://arxiv.org/abs/1707.01495)  
-3. [_Multi-Goal Reinforcement Learning: Challenging Robotics Environments and Request for Research_, Plappert et al., 2018](https://arxiv.org/abs/1802.09464)  
+  
 ## Acknowledgement
 This project references and modifies the following open-source code:
 - **Original Author**: [@Alireza Kazemipour](https://github.com/alirezakazemipour)
